@@ -1,0 +1,25 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erykzon/fizzbuzz.git"
+  },
+  "author": "erykzon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erykzon/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/erykzon/fizzbuzz#readme",
+  "dependencies": {
+    "jest": "^28.0.2"
+  }
+}
