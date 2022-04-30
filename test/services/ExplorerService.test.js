@@ -2,11 +2,12 @@ const ExplorerService = require('./../../lib/services/ExplorerService')
 const explorers = [{mission: "node"}]
 
 describe ("Test de Exploer Service ", () => {
-    test("Requerimiento 1: Calcular los explrers en la mision  Node ",() =>{
+    test("Requerimiento 1: Filtrar los explrers en la mision  Node ",() =>{
         const explorersInNode = ExplorerService.filterByMission(explorers, "node")
-        expect(explorersInNode.length).toBe(1)   
+        expect(explorersInNode).toMatch(/node/)   
     })
-    // test("Requerieminto 2: Calcular el total de explorer en la mision Node ", ()=>{
-        
-    // })
+    test("Requerieminto 2: Calcular el total de explorer en la mision Node ", ()=>{
+        const AmountOfExplorersByMission = ExplorerService.AmountOfExplorersByMission(explorers, "node")
+        expect(AmountOfExplorersByMission.length).toBe(1)
+    })
 })
