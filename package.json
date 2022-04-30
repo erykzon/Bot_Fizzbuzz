@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/erykzon/fizzbuzz#readme",
   "dependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
