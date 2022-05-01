@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "jest --verbose"
+
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
