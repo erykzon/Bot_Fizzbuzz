@@ -5,7 +5,7 @@ const explorers = Reader.readJsonFile("explorers.json")
 
 const ExplorerService =  require('./../fizzbuzz/lib/services/ExplorerService')
 
-console.log(ExplorerService.filterByMission(explorers,"node"))
+console.log(ExplorerService)
 
 
 

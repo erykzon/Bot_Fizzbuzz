@@ -1,5 +1,6 @@
 const ExplorerService = require('./../../lib/services/ExplorerService')
-const explorers = [{mission: "node"}]
+const explorers = [{mission: "node", name: "Woopa"}]
+
 
 describe ("Test de Exploer Service ", () => {
     test("Requerimiento 1: Filtrar los explrers en la mision  Node ",() =>{
@@ -14,5 +15,9 @@ describe ("Test de Exploer Service ", () => {
         const explorerLength = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(explorerLength).toBe(1);
         console.log("Exploerers ►►► " + explorerLength)
+    }),
+    test("Requerimiento 3: Obtener el nombre de usuario por mision", () => {
+        const username = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
+        expect(username.name = "Woopa").toContain("Woopa")
     })
 })

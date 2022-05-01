@@ -7,8 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest --verbose"
-
+    "test": "jest --verbose",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "jest": {
     "testEnvironment": "node"
@@ -25,5 +26,8 @@
   "homepage": "https://github.com/erykzon/fizzbuzz#readme",
   "dependencies": {
     "jest": "^26.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
   }
 }
