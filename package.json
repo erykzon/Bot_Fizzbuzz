@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest --verbose",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -25,7 +26,9 @@
   },
   "homepage": "https://github.com/erykzon/fizzbuzz#readme",
   "dependencies": {
-    "jest": "^26.0.0"
+    "express": "^4.18.1",
+    "jest": "^26.0.0",
+    "save": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^8.14.0"
