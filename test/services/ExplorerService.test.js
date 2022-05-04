@@ -1,5 +1,5 @@
-const ExplorerService = require('./../../lib/services/ExplorerService')
-const explorers = [{mission: "node", githubUsername: "ajolonauta1"}]
+const ExplorerService = require("./../../lib/services/ExplorerService");
+const explorers = [{mission: "node", githubUsername: "ajolonauta1"}];
 
 
 describe ("Test de Exploer Service ", () => {
@@ -14,10 +14,11 @@ describe ("Test de Exploer Service ", () => {
         // const explorers = [{mission: "node"}]
         const explorerLength = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(explorerLength).toBe(1);
-        console.log("Exploerers ►►► " + explorerLength)
+        console.log("Exploerers ►►► " + explorerLength);
     }),
     test("Requerimiento 3: Obtener el nombre de usuario por mision", () => {
-        const username = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
-        expect(username.githubUsername = "ajolonauta1").toContain("ajolonauta1")
-    })
-})
+        const username = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(username.githubUsername = "ajolonauta1").toContain("ajolonauta1");
+    });
+    
+});
