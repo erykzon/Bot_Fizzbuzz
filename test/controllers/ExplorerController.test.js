@@ -22,4 +22,8 @@ describe("Realizando test de Controllers",() =>{
         const ExplorersAmonutByMission = ExplorerController.getExplorersAmonutByMission("node");
         expect(ExplorersAmonutByMission).toBe(10);
     });
+    test("Realizando test de validacion score" ,()=>{
+        const applyValidationInNumber = ExplorerController.ValidationInNumber(15)
+        expect(applyValidationInNumber).toBe("FIZZBUZZ")
+    })
 });
